@@ -25,7 +25,7 @@ class SchoolImport implements ToCollection, WithHeadingRow
             School::create([
                 'nama_sekolah' => $row['nama'],
                 'npsn'   => $row['npsn'],
-                'status'   => $row['status'],
+                'status_sekolah'   => $row['status_sekolah'],
                 'role_id' => $kategori,
             ]);
         }
