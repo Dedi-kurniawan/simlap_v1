@@ -193,9 +193,9 @@
                         @if ($dist->nama == $key)
                             @foreach ($value as $t)
                                 @php
-                                    $laki += $t->employeeReportSmp->where('jenis_kelamin', 'L')->count();
-                                    $perempuan += $t->employeeReportSmp->where('jenis_kelamin', 'P')->count(); 
-                                    $pns += $t->employeeReportSmp->where('status_pegawai', 'PNS')->count();                                  
+                                    $laki += $t->teacherReportSmp->where('jenis_kelamin', 'L')->count();
+                                    $perempuan += $t->teacherReportSmp->where('jenis_kelamin', 'P')->count(); 
+                                    $pns += $t->teacherReportSmp->where('status_pegawai', 'PNS')->count();                                  
                                 @endphp
                             @endforeach
                         @endif                   
